@@ -1,0 +1,78 @@
+main{
+    display: flex; /*tipo de caixa de renderização*/
+    width: 100vw; /*Altura*/
+    height: 100vh; /*Largura*/
+    justify-content: center; /* alinha os itens do container flexível quando os itens não utilizam todo o espaço disponível*/
+    align-items: center; /* especifica o alinhamento padrão para itens dentro do contêiner flexível*/
+}
+
+.fundo{
+    background-color: black; /*define a cor de fundo*/
+    margin: 0; /*cria espaço ao redor dos elementos*/
+}
+
+.quadrado{
+    display: flex;
+    flex-direction: column; /*define como os itens flexíveis são colocados no contêiner, definindo o eixo principal e a direção*/
+    background: rgb(255,198,0); /*Cor do fundo*/
+    width: 360px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px; /*define o raio dos cantos do elemento*/
+    box-shadow: 0 0 10px black; /*utilizado para adicionar efeitos de sombra em volta de um elemento*/
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif; /*Fonte*/
+    border-bottom: solid 5px black; /*Define o estilo da borda inferior para diferentes elementos*/
+    margin-bottom: 20px;
+}
+.input{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.input input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none; /*Borda*/
+    outline: 0; /*é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno*/
+    font: bold 1.5rem serif;
+    text-align: center;
+}
+.input label{
+    font: bold 1.5rem serif;
+}
+button{
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: #000;
+    color: rgb(255,198,0);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer; /*especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+}
+.result{
+    display: flex; 
+    margin-top: 20px; /*Define a margem superior de um elemento*/
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 1.5rem serif;
+    box-shadow: 0px 0px 10px black; 
+    background: #000;
+    color: rgb(255,198,0);
+    padding: 20px; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    box-sizing: border-box; /*A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos*/
+    user-select: none; /*serve para controlares que texto é que o utilizador pode ou não pode seleccionar*/
+}

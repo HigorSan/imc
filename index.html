@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!--é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo-->
+<html lang="pt-br"> <!--ajuda a definir o idioma de um elemento--> 
+<head> <!--cabeça-->
+    <meta charset="UTF-8"> <!--é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--serve para controlar as ações do browser e também especificam melhor as informações -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--define qualquer informação de metadados que não podem ser definidos por outros elementos HTML -->
+    <title>Calculo de IMC</title> <!--Titulo -->
+    <link rel="stylesheet" href="estilo.css"> <!--serve para você dizer qual o relacionamento do arquivo que você quer utilizar com o arquivo atual -->
+</head>
+<body class="fundo"> <!--representa o conteúdo de um documento HTML -->
+    <main> <!--define o conteúdo principal -->
+        <div class="quadrado"> <!--é um container genérico para conteúdo de fluxo, que de certa forma não representa nada -->
+            <div class="titulo"> Calculadora - IMC</div>
+            <div class="input">
+                <label> Altura:</label> <!--representa uma legenda para um item em uma interface de usuário -->
+                <input type="number" id="altura"> <!--é usado para criar controles interativos para formulários baseados na web para receber dados do usuário -->
+            </div>
+            <div class="input">
+                <label>Peso:</label>
+                <input type="number" id="peso">
+            </div>
+            <button id="calcular">Calcular</button> <!--representa um botão clicável-->
+            <div class="result" id="resultado"></div>
+        </div>
+    </main>
+   <script src="./imc.js"></script> <!--é usado para incluir ou referenciar um script executável-->
+</body> <!--corpo-->
+</html> <!--Linguagem de marcação de hipertexto -->
